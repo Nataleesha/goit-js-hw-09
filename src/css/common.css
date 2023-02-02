@@ -16,3 +16,47 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.time-input {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+}
+
+.time-input button {
+  width: 65px;
+  border-radius: 4px;
+}
+
+.time-input button:hover {
+  cursor: pointer;
+}
+
+#datetime-picker {
+  width: 180px;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.timer {
+  width: 280px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+.field .value {
+  text-align: center;
+  font-size: 35px;
+}
+
+.field .label {
+  text-align: center;
+}
