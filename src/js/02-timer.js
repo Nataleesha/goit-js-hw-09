@@ -54,9 +54,12 @@ function addLeadingZero(value) {
 function timeCount() {
   Notify.success('Countdown has started!');
   startBtn.removeEventListener('click', timeCount);
-  setInterval(() => {
+  intervalId = setInterval(() => {
     const currentTime = Date.now();
     const remainTime = calendar.selectedDates[0].getTime() - currentTime;
+    if (remainTime < 1000) {
+      clearInterval(intervalId);
+    }
     const mms = convertMs(remainTime);
     daysEl.textContent = addLeadingZero(mms.days);
     hoursEl.textContent = addLeadingZero(mms.hours);
