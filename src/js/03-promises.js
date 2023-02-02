@@ -6,3 +6,7 @@ function createPromise(position, delay) {
     // Reject
   }
 }
+
+function createPromise(position, delay) {
+  
+}
