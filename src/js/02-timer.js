@@ -57,7 +57,7 @@ function timeCount() {
   intervalId = setInterval(() => {
     const currentTime = Date.now();
     const remainTime = calendar.selectedDates[0].getTime() - currentTime;
-    if (remainTime <= 10) {
+    if (remainTime < 100) {
       clearInterval(intervalId);
     }
     const mms = convertMs(remainTime);
